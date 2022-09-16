@@ -11,7 +11,7 @@ print('-')
 print('please select a pilot:')
 print('-')
 cwd = os.chdir(r'/Users/qa_share/Desktop')#add cwd
-pilotlist = (sorted(os.listdir(r'/Users/qa_share/Documents')))#add cwd
+pilotlist = (sorted(os.listdir(r'')))#add cwd
 print('\n'.join(pilotlist))
 print()
 pilotname = input('Enter here: ')
@@ -21,7 +21,7 @@ time.sleep(2)
 
 
 #change the cwd to the desired location (in our case it will be R2D2)
-os.chdir(r'/Users/qa_share/Documents/' + pilotname)#add cwd
+os.chdir(r'/' + pilotname)#add cwd
 cwd = os.getcwd()
 
 
@@ -29,7 +29,7 @@ cwd = os.getcwd()
 def find_r_2():
     for directory in Path.cwd().glob(f'{ID}*'):
         if directory.is_dir():
-            os.chdir(r'/Users/qa_share/Documents')
+            os.chdir(r'/')# classified- enter a directory path here
             DESKTOP = Path.cwd()
             directory.replace(DESKTOP/directory.name)# DESKTOP is named after the folder
             print('Success! The droid was found!')
@@ -44,7 +44,7 @@ find_r_2()
 
 # below is gui automation that requires x & y coordinants- set them appropriately
 def open_talon():
-    talonview = 'https://skysourceaerial.collaborate.center/#/home'
+    talonview = '' #classifed- link to webpage
     web.open(talonview)
     time.sleep(2)
     py.click(1479, 164)# opens dashboard

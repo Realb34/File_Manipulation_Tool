@@ -1,6 +1,7 @@
 # File Manipulator
 ## Overview
-The File Manipulator is a Python script designed to interact with directories and perform specific GUI interactions. It's organized into a class that encapsulates the functionality, making it easy to modify or extend.
+The File Manipulator is a Python script designed to interact with directories and perform specific GUI interactions. It's organized into a class that encapsulates the functionality, making it easy to modify or extend. You'll notice a lot of different naming and interactions
+that might not look familiar, feel free to change them since they are more specific to the project I was working on in that moment.
 
 ### Requirements
 - Python 3

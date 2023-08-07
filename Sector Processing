@@ -1,0 +1,10 @@
+    def sectors(self):
+        try:
+            sector_1 = len(os.listdir(os.path.join(self.base_path, self.ID, 'Sector 1')))
+            sector_2 = len(os.listdir(os.path.join(self.base_path, self.ID, 'Sector 2')))
+            sector_3 = len(os.listdir(os.path.join(self.base_path, self.ID, 'Sector 3')))
+            total = sector_1 + sector_2 + sector_3
+            print('Sectors combined:')
+            print(total)
+        except Exception as e:
+            print(f"An error occurred while processing sectors: {e}")

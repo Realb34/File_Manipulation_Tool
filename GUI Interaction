@@ -1,0 +1,7 @@
+    def click_and_write(self, x, y, value):
+        try:
+            if value:
+                py.click(x, y)
+                py.write(value)
+        except Exception as e:
+            print(f"An error occurred while clicking and writing at ({x}, {y}): {e}")

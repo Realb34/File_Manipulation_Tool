@@ -1,0 +1,18 @@
+class FileManipulator:
+    def __init__(self, base_path, ID):
+        self.base_path = base_path
+        self.ID = ID
+        self.sections = {
+            'Access Road': None,
+            'Cable Run': None,
+            'Downlook': None,
+            'Down orbit': None,
+            'Center': None,
+            'Uplook': None,
+            'Up orbit': None,
+            'Tower Site Overview': None,
+            'TSO': None,
+            'Building Site Overview': None,
+            'BSO': None,
+            'Civil': None
+        }

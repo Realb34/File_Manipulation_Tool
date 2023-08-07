@@ -1,0 +1,16 @@
+    def change_directory(self, sub_path):
+        try:
+            cwd = os.chdir(os.path.join(self.base_path, self.ID, sub_path))
+            count = os.listdir(os.path.join(self.base_path, self.ID, sub_path))
+            print(sub_path.split('/')[-1] + ':')
+            length = len(count)
+            print(length)
+            time.sleep(0.5)
+            return length
+        except Exception as e:
+            print(f"An error occurred while changing directory to {sub_path}: {e}")
+            return None
+
+    def process_sections(self):
+        for section in self.sections:
+            self.sections[section] = self.change_directory(section)

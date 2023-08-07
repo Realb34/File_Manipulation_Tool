@@ -1,0 +1,13 @@
+ID = input('enter file name: ')
+talonview_link = input('copy and paste link here:  ')
+base_path = r'/path/to/your/directory' # Replace with actual path
+file_manipulator = FileManipulator(base_path, ID)
+
+file_manipulator.process_sections()
+file_manipulator.sectors()
+
+matterport = str(input('is there a Matterport? Y/N:  '))
+print('Inputing, please wait...')
+time.sleep(1.5)
+
+file_manipulator.perform_gui_actions(talonview_link, matterport)

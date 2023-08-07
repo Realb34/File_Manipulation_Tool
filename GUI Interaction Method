@@ -1,0 +1,4 @@
+    def perform_gui_actions(self, talonview_link, matterport):
+        # TODO: Implement the specific GUI interactions here
+        # Use self.click_and_write(x, y, value) to replace repetitive code
+        pass
